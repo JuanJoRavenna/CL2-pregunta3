@@ -19,7 +19,7 @@ public class AlumnoService {
         return alumnoRepository.findAll();
     }
 
-    public Optional<Alumno>buscarAlumnoId(Integer id){
+    public Optional<Alumno>buscarAlumnoId(String id){
         Optional<Alumno> alumno=alumnoRepository.findById(id);
         if(alumno.isEmpty()){
             return Optional.empty();
@@ -34,7 +34,7 @@ public class AlumnoService {
         return alumnoRepository.save(alumno);
     }
 
-    public HashMap<String,String> eliminarxId(Integer id){
+    public HashMap<String,String> eliminarxId(String id){
         HashMap<String,String>respuesta=new HashMap<String,String>();
         alumnoRepository.deleteById(id);
         respuesta.put("Mensaje","Se elimino un alumno");

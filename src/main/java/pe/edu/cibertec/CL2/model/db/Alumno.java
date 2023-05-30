@@ -9,19 +9,18 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "estado")
+@Table(name = "alumno")
 public class Alumno {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idAlumno;
+    private String idalumno;
 
-    @Column(name = "ApeAlumno")
-    private String ApeAlumno;
-    @Column(name = "NomAlumno")
-    private String NomAlumno;
-    @Column(name = "IdEsp")
-    private String IdEsp;
-    @Column(name = "Proce")
-    private String Proce;
+    @Column(name = "apealumno")
+    private String apeAlumno;
+    @Column(name = "nomalumno")
+    private String nomAlumno;
+    @Column(name = "idesp")
+    private String idEsp;
+    @Column(name = "proce")
+    private String proce;
 }

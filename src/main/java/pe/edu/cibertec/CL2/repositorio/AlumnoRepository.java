@@ -6,6 +6,6 @@ import pe.edu.cibertec.CL2.model.db.Alumno;
 
 @Repository
 public interface AlumnoRepository
-        extends JpaRepository<Alumno, Integer> {
+        extends JpaRepository<Alumno, String> {
 }
 
